@@ -1,0 +1,12 @@
+{
+    "name": "Ai-Cam",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "aiCam.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ]
+}
