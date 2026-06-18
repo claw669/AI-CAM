@@ -77,6 +77,7 @@ namespace AiCam {
     //% block="Initialize AI Camera TX %tx RX %rx Baudrate %baud"
     //% tx.defl=SerialPin.P2
     //% rx.defl=SerialPin.P8
+   //% baud.defl=9600
     //% group="Base"
     //% weight=100
     export function begin(
