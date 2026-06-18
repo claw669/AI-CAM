@@ -4,7 +4,7 @@
         "core": "*"
     },
     "files": [
-        "aiCam.ts"
+        "aiCam.ts",
         "_locales/zh-cn/AiCam-strings.json"
     ],
     "testFiles": [
