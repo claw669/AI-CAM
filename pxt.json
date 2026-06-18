@@ -5,7 +5,7 @@
     },
     "files": [
         "aiCam.ts",
-        "_locales/zh-cn/aiCam-strings.json"
+        "_locales/zh-cn/AiCam-strings.json"
     ],
     "testFiles": [
         "test.ts"
