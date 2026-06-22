@@ -14,6 +14,36 @@ namespace AiCam {
         Card = 3
     }
 
+    /**
+     * 卡片识别结果可选类型
+     */
+    export enum CardType {
+        //% block="Straight"
+        Straight = 0,
+        //% block="Left"
+        Left = 1,
+        //% block="Right"
+        Right = 2,
+        //% block="Parking"
+        Parking = 3,
+        //% block="U-Turn"
+        UTurn = 4
+    }
+
+    /**
+     * 颜色识别结果可选类型
+     */
+    export enum ColorType {
+        //% block="Red"
+        Red = 0,
+        //% block="Green"
+        Green = 1,
+        //% block="Blue"
+        Blue = 2,
+        //% block="Yellow"
+        Yellow = 3
+    }
+
     // =========================
     // 数据缓存
     // =========================
@@ -42,7 +72,7 @@ namespace AiCam {
         }
 
         let mode = parts[1]
-        let data = parts[2]
+        let data = parts[2].trim()
 
         if (mode == "FACE") {
             let xy = data.split(",")
@@ -181,13 +211,27 @@ namespace AiCam {
     // =========================
 
     /**
-     * Color Result
+     * 颜色原始结果
      */
-    //% block="Color Result"
-    //% group="Color"
-    //% weight=50
     export function color(): string {
         return colorValue
+    }
+
+    /**
+     * Check if the recognized color matches the selected color
+     * @param targetColor the expected color
+     */
+    //% block="Color is %targetColor"
+    //% group="Color"
+    //% weight=50
+    export function isColor(targetColor: ColorType): boolean {
+        switch (targetColor) {
+            case ColorType.Red: return colorValue == "RED";
+            case ColorType.Green: return colorValue == "GREEN";
+            case ColorType.Blue: return colorValue == "BLUE";
+            case ColorType.Yellow: return colorValue == "YELLOW";
+            default: return false;
+        }
     }
 
     // =========================
@@ -209,12 +253,27 @@ namespace AiCam {
     // =========================
 
     /**
-     * Card Content
+     * 卡片原始结果
      */
-    //% block="Card Content"
-    //% group="Card"
-    //% weight=30
     export function card(): string {
         return cardValue
+    }
+
+    /**
+     * Check if the recognized card matches the selected type
+     * @param targetCard the expected card type
+     */
+    //% block="Card is %targetCard"
+    //% group="Card"
+    //% weight=30
+    export function isCard(targetCard: CardType): boolean {
+        switch (targetCard) {
+            case CardType.Straight: return cardValue == "STRAIGHT";
+            case CardType.Left: return cardValue == "LEFT";
+            case CardType.Right: return cardValue == "RIGHT";
+            case CardType.Parking: return cardValue == "PARKING";
+            case CardType.UTurn: return cardValue == "UTURN";
+            default: return false;
+        }
     }
 }
