@@ -82,9 +82,9 @@ namespace AiCam {
                 if (faceXValue != 0 && faceYValue != 0) {
                     faceValid = true
                 }
-	            else{
-	                  faceValid = false
-		            }
+                else {
+                    faceValid = false
+                }
             }
         } else if (mode == "COLOR") {
             colorValue = data
