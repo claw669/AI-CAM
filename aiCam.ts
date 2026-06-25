@@ -79,11 +79,12 @@ namespace AiCam {
             if (xy.length >= 2) {
                 let x = parseInt(xy[0])
                 let y = parseInt(xy[1])
-                if (!isNaN(x) && !isNaN(y)) {
-                    faceXValue = x
-                    faceYValue = y
+                if (faceXValue != 0 && faceYValue != 0) {
                     faceValid = true
                 }
+	else{
+	          faceValid = false
+		}
             }
         } else if (mode == "COLOR") {
             colorValue = data
