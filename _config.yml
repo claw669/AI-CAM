@@ -1,3 +1,4 @@
+language: AiCam-strings.json
 makecode:
   target: microbit
   platform: microbit

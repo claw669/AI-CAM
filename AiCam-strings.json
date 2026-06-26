@@ -1,0 +1,23 @@
+{
+    "AiCam.Mode.Face|block": "人脸识别",
+    "AiCam.Mode.Color|block": "颜色识别",
+    "AiCam.Mode.QR|block": "二维码识别",
+    "AiCam.Mode.Card|block": "卡片识别",
+    
+    "AiCam.begin|block": "初始化AI摄像头 TX %tx RX %rx 波特率 %baud",
+    "AiCam.setMode|block": "设置AI模式 %mode",
+    
+    "AiCam.faceDetected|block": "检测到人脸",
+    "AiCam.faceX|block": "人脸X坐标",
+    "AiCam.faceY|block": "人脸Y坐标",
+    
+    "AiCam.color|block": "颜色结果",
+    "AiCam.qr|block": "二维码内容",
+    "AiCam.card|block": "卡片内容",
+
+    "{id:group}Base": "基础",
+    "{id:group}Face": "人脸",
+    "{id:group}Color": "颜色",
+    "{id:group}QR": "二维码",
+    "{id:group}Card": "卡片"
+}
