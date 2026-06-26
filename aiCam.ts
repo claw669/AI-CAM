@@ -77,8 +77,8 @@ namespace AiCam {
         if (mode == "FACE") {
             let xy = data.split(",")
             if (xy.length >= 2) {
-                let x = parseInt(xy[0])
-                let y = parseInt(xy[1])
+                faceXValue  = parseInt(xy[0])
+                faceYValue   = parseInt(xy[1])
                 if (faceXValue != 0 && faceYValue != 0) {
                     faceValid = true
                 }
