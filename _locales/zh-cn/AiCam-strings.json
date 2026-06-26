@@ -1,23 +1,30 @@
 {
-    "AiCam.Mode.Face|block": "人脸识别",
-    "AiCam.Mode.Color|block": "颜色识别",
-    "AiCam.Mode.QR|block": "二维码识别",
-    "AiCam.Mode.Card|block": "卡片识别",
-    
-    "AiCam.begin|block": "初始化AI摄像头 TX %tx RX %rx 波特率 %baud",
-    "AiCam.setMode|block": "设置AI模式 %mode",
-    
-    "AiCam.faceDetected|block": "检测到人脸",
-    "AiCam.faceX|block": "人脸X坐标",
-    "AiCam.faceY|block": "人脸Y坐标",
-    
-    "AiCam.color|block": "颜色结果",
-    "AiCam.qr|block": "二维码内容",
-    "AiCam.card|block": "卡片内容",
+    "AiCam.Mode.Face": "人脸",
+    "AiCam.Mode.Color": "颜色",
+    "AiCam.Mode.QR": "二维码",
+    "AiCam.Mode.Card": "卡片",
 
-    "{id:group}Base": "基础",
-    "{id:group}Face": "人脸",
-    "{id:group}Color": "颜色",
-    "{id:group}QR": "二维码",
-    "{id:group}Card": "卡片"
+    "AiCam.CardType.Straight": "直行",
+    "AiCam.CardType.Left": "左转",
+    "AiCam.CardType.Right": "右转",
+    "AiCam.CardType.Parking": "停车",
+    "AiCam.CardType.UTurn": "掉头",
+
+    "AiCam.ColorType.Red": "红色",
+    "AiCam.ColorType.Green": "绿色",
+    "AiCam.ColorType.Blue": "蓝色",
+    "AiCam.ColorType.Yellow": "黄色",
+
+    "AiCam.begin|block": "初始化 AI 摄像头 TX %tx RX %rx 波特率 %baud",
+    "AiCam.setMode|block": "设置 AI 模式 %mode",
+
+    "AiCam.faceDetected|block": "检测到人脸",
+    "AiCam.faceX|block": "人脸 X 坐标",
+    "AiCam.faceY|block": "人脸 Y 坐标",
+
+    "AiCam.isColor|block": "颜色是 %targetColor",
+
+    "AiCam.qr|block": "二维码内容",
+
+    "AiCam.isCard|block": "卡片是 %targetCard"
 }

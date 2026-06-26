@@ -1,6 +1,5 @@
 {
     "name": "Ai-Cam",
-    "language": "AiCam-strings.json",
     "dependencies": {
         "core": "*"
     },
